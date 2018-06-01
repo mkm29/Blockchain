@@ -2,7 +2,12 @@
 
 extension Droplet {
     public func setup() throws {
-        try setupRoutes()
         // Do any additional droplet setup
+        setupcontrollers()
+    }
+    
+    
+    func setupcontrollers() {
+        _ = BlockchainController(drop: self)
     }
 }
